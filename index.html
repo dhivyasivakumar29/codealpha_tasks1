@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=DM+Serif+Text&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lovers+Quarrel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="head">MEmories bRing bAck -`♡´- </h1> <br><br>
+    <div class="full-img">
+      <img src="Image1.jpeg" id="full">
+      <span onclick="closeImg()">X</span>
+    </div>
+    <div class="imagefolder">
+
+      <img src="Image1.jpeg" alt="pathirana"  onclick= "openImg(this.src)" >
+      <img src="image2.jpeg" alt="pathirana" onclick= "openImg(this.src)" >
+      <img src="image3.jpeg" alt="pathirana" onclick= "openImg(this.src)" >
+      <img src="image4.jpeg" alt="pathirana" onclick= "openImg(this.src)" >
+      <img src="image5.jpeg" alt="pathirana" onclick= "openImg(this.src)" >
+      <img src="image 6.jpeg" alt="pathirana" onclick= "openImg(this.src)">
+      <img src="image 7.jpeg" alt="pathirana" onclick= "openImg(this.src)" >
+      <img src="image8.jpeg" alt="pathirana" onclick= "openImg(this.src)" >
+      <img src="image9.jpeg" alt="pathirana" onclick= "openImg(this.src)" >
+      <img src="image10.jpeg" alt="pathirana" onclick= "openImg(this.src)" >
+      <img src="images11.jpeg" alt="pathirana" onclick= "openImg(this.src)" >
+    </div>
+    <script>
+      var bigImgBox=document.querySelector(".full-img");
+      var big=document.getElementById("full");
+
+      function openImg(pic){
+        bigImgBox.style.display="flex"; 
+        big.src=pic;
+      }
+
+      function closeImg(){
+        bigImgBox.style.display="none";
+      }
+    </script>
+</body>
+</html>

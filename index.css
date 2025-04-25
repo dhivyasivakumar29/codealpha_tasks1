@@ -1,0 +1,72 @@
+body{
+ background:linear-gradient(to right,violet,rgb(160, 204, 226),pink);
+ 
+
+}
+.imagefolder img{
+    height: 200px;
+    width: 180px;
+    border: 2px black groove;
+    justify-content: center;
+
+}
+.imagefolder{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 50px;
+   width:80%;
+   height:100vh;
+   margin-left: 12%;
+   
+}
+
+.head {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .imagefolder img:hover{
+    transform: scale(0.8) rotate(15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 70px rgb(0,0,0,0.5);
+  }
+   .flower{
+    max-height: 40px;
+   max-width: 40px;
+   
+    
+  }
+  
+  .full-img{
+    position:fixed;
+    height:100vh;
+    width:100%;
+    top:0;
+    left:0;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 16, 16,0.9);
+  }
+  .full-img img{
+    width: 90%;
+    max-width: 500px;
+    max-height: 600px;   
+
+  }
+  .full-img span{
+    font-size: 2rem;
+    position:absolute;
+    top: 40px;
+    right:40px;
+    color:rgb(237, 226, 226);
+    
+  }
+  .full-img span:hover{
+  color:red;
+  }
+
+  
